@@ -1,0 +1,196 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@200;300&display=swap');
+:root {
+    --Poppins-font: "Poppins", cursive;
+}
+body {
+    background-color: #FDFFFC;
+    color: #1D1D1D;
+    margin: 0;
+    padding: 0;
+    font-family: var(--Poppins-font);
+}
+/* DO NOT modify the classes above */
+
+
+
+/* Hero Section */
+.banner {
+    background-color: #080808;
+    margin: auto;
+    max-height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 500px;
+    opacity: 0.5;
+}
+
+
+
+.intro-back {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro {
+    max-width: 1144px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+
+
+/* Individual Portfolio */
+.portfolio-back {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio {
+    max-width: 1144px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+.portfolio-span {
+    font-weight: bolder;
+}
+.portfolio-title {
+    font-size:xx-large;
+    margin-bottom: 80px;
+}
+.portfolio-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.portfolio-card {
+    color: #1D1D1D;
+    background-color: #1d64c141;
+    border-radius: 15px;
+    width: 265px;
+    max-height: 400px;
+    text-decoration: none;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.portfolio-card img {
+    max-width: 265px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+.portfolio-card p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.porttfolio-quote {
+    font-size: small;
+}
+.portfolio-card:hover {
+    background-color: #1d64c17d;
+    transform: transform ease-in-out;
+    transition-duration: 200ms;
+    transform: scale(1.05);
+}
+.portfolio-name {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+.instructions {
+    margin-bottom: 100px;
+    margin-top: 75px;
+}
+
+.agreement {
+    margin-bottom: 50px;
+}
+
+.calculator-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator {
+    max-width: 900px;
+}
+.title {
+    font-size: large;
+    font-weight: bold;
+}
+.field {
+    margin-bottom: 50px;
+}
+.bmi {
+    text-decoration: none;
+}
+.bmi-p {
+    font-size: small;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+.button-call {
+    margin-bottom: 100px;
+    cursor: pointer;
+    background-color: #1D64C1;
+    color: #FDFFFC;
+    font-family: var(--Poppins-font);
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    width: 120px;
+}
+.button-call:hover {
+    background-color: #174c92;
+    transition: 0.2s ease-in-out;
+}
+
+.calculate {
+    margin-bottom: 100px;
+    cursor: pointer;
+    background-color: #1D64C1;
+    color: #FDFFFC;
+    font-family: var(--Poppins-font);
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    width: 90px;
+}
+.calculate:hover {
+    background-color: #174c92;
+    transition: 0.2s ease-in-out;
+}
+
+button:disabled {
+    background-color: #174c9298;
+}
+button:disabled:hover {
+    background-color: #174c9298;
+}
+
+.insurance-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.insurance {
+    max-width: 1044px;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boneyard Care</title>
+    <link rel="icon" href="./icon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="banner">
+        <img src="https://images.pexels.com/photos/4309557/pexels-photo-4309557.jpeg">
+    </section>
+
+    <section class="calculator-back">
+        <div class="calculator">
+            <div class="instructions">
+                <h1>Get Boneyard Care +</h1>
+                <p>Getting a healthcare plan is one the most important decisions in life and we 
+                    here to help you. In order to know if you are an unsurable individual, fill out 
+                    the following form according to your medical history and general information about you.
+                </p>
+                <h4>Please, fill out the following form:</h4>
+            </div>
+
+            <!-- Age -->
+            <fieldset class="field">
+                <legend class="title">Your Age:</legend>
+                <div>
+                    <input type="radio" id="age-1" name="age" value="age-1" checked />
+                    <label for="age-1">Less than 30</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="age-2" name="age" value="age-2" />
+                    <label for="age-2">More than 30 but less than 45</label>
+                </div>
+            
+                <div>
+                    <input type="radio" id="age-3" name="age" value="age-3" />
+                    <label for="age-3">More than 45 but less than 60</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="age-4" name="age" value="age-4" />
+                    <label for="age-4">60 or more</label>
+                </div>
+            </fieldset>
+            
+            <!-- BMI -->
+            <fieldset>
+                <legend class="title">Body Mass Index (BMI):</legend>
+                <div>
+                    <input type="radio" id="bmi-1" name="bmi" value="underweight" checked/>
+                    <label for="bmi-1">Underweight</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="bmi-2" name="bmi" value="normal" />
+                    <label for="bmi-2">Normal</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="bmi-3" name="bmi" value="overweight" />
+                    <label for="bmi-3">Overweight</label>
+                </div>
+            
+                <div>
+                    <input type="radio" id="bmi-4" name="bmi" value="obesity" />
+                    <label for="bmi-4">Obesity</label>
+                </div>
+            </fieldset>
+            <p class="bmi-p">Don't know what your BMI is? Use this free calculator from the 
+                Government of the U.S. <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm" 
+                class="bmi" target="_blank">Click here</a></p>
+
+            <!-- Blood Pressure -->
+            <fieldset class="field">
+                <legend class="title">Blood Pressure:</legend>
+                <div>
+                    <input type="radio" id="bp-1" name="blood_pressure" value="normal" checked/>
+                    <label for="bp-1">Normal</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="bp-2" name="blood_pressure" value="elevated" />
+                    <label for="bp-2">Elevated</label>
+                </div>
+            
+                <div>
+                    <input type="radio" id="bp-3" name="blood_pressure" value="st-1" />
+                    <label for="bp-3">Stage 1</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="bp-4" name="blood_pressure" value="st-2" />
+                    <label for="bp-4">Stage 2</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="bp-5" name="blood_pressure" value="crisis" />
+                    <label for="bp-5">Crisis</label>
+                </div>
+            </fieldset>
+
+            <!-- Family Disease -->
+            <fieldset class="field">
+                <legend class="title">Family Disease:</legend>
+                <div>
+                    <input type="radio" id="fd-1" name="family_disease" value="none" checked/>
+                    <label for="fd-1">None</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="fd-2" name="family_disease" value="diabetes" />
+                    <label for="fd-2">Diabetes</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="fd-3" name="family_disease" value="cancer" />
+                    <label for="fd-2">Cancer</label>
+                </div>
+            
+                <div>
+                    <input type="radio" id="fd-4" name="family_disease" value="hypertension" />
+                    <label for="fd-3">Hypertension</label>
+                </div>
+            </fieldset>
+
+            <div class="agreement">
+                <input type="checkbox" id="hereby" name="consent" value="certify" />
+                <label for="hereby">I hereby certify that all the information provided above is accurate</label>
+            </div>
+            
+            <!-- Calculate Button -->
+            <button class="calculate" id="calculate_button" disabled>Calculate</button>
+        </div>
+    </section>
+
+    <script>
+        const checkbox = document.getElementById('hereby');
+        const calculateButton = document.getElementById('calculate_button');
+
+        checkbox.addEventListener('change', function() {
+            if (checkbox.checked) {
+                calculateButton.disabled = false;
+            } else {
+                calculateButton.disabled = true;
+            }
+        });
+    </script>
+
+</body>
+</html>
