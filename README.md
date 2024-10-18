@@ -2,7 +2,7 @@
 
 # Software Engineering
 
-# Health Insurance Risk Calculator Nodejs
+# Health Insurance Risk Calculator
 
 # Credit: Eric Pogue for API method
 
