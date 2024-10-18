@@ -1,3 +1,11 @@
+function pingSite() {
+    fetch('https://health-risk-calculator-nodejs-dxh3drh4ebamdeag.centralus-01.azurewebsites.net/api/ping')
+      .then(response => response.json())
+      .then(data => console.log('Server response:', data))
+      .catch(error => console.error('Error:', error));
+  }
+  window.onload = pingSite;
+
 function calculateBMI() {
     const heightFt = document.getElementById('heightFt').value;
     const heightIn = document.getElementById('heightIn').value;
