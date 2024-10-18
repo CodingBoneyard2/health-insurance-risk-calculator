@@ -6,6 +6,7 @@
     <title>Boneyard Care</title>
     <link rel="icon" href="./icon.png">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
     <section class="banner">
@@ -48,31 +49,34 @@
             </fieldset>
             
             <!-- BMI -->
-            <fieldset>
+            <fieldset class="field">
                 <legend class="title">Body Mass Index (BMI):</legend>
                 <div>
-                    <input type="radio" id="bmi-1" name="bmi" value="underweight" checked/>
-                    <label for="bmi-1">Underweight</label>
+                    <label for="heightFt">Enter Height (Ft):</label>
+                    <input type="number" id="heightFt" name="heightFt" min="0">
                 </div>
 
                 <div>
-                    <input type="radio" id="bmi-2" name="bmi" value="normal" />
-                    <label for="bmi-2">Normal</label>
+                    <label for="heightIn">Enter Height (In):</label>
+                    <input type="number" id="heightIn" name="heightIn" min="0">
                 </div>
                 
                 <div>
-                    <input type="radio" id="bmi-3" name="bmi" value="overweight" />
-                    <label for="bmi-3">Overweight</label>
+                    <label for="weightLbs">Enter Weight (Lbs):</label>
+                    <input type="number" id="weightLbs" name="weightLbs" min="0">
                 </div>
-            
+
                 <div>
-                    <input type="radio" id="bmi-4" name="bmi" value="obesity" />
-                    <label for="bmi-4">Obesity</label>
+                    <button onclick="calculateBMI()">Click For Results:</button>
+                    <input type="text" id="bmiResult" name="bmiResult" readonly value="Results Will Display Here">
                 </div>
             </fieldset>
+
+            <!--
             <p class="bmi-p">Don't know what your BMI is? Use this free calculator from the 
                 Government of the U.S. <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm" 
                 class="bmi" target="_blank">Click here</a></p>
+            -->
 
             <!-- Blood Pressure -->
             <fieldset class="field">
